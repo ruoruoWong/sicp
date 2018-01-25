@@ -1,5 +1,8 @@
 ### 练习
 #### 1.1
+Below is a sequence of expressions. What is the result printed by the interpreter in
+response to each expression? Assume that the sequence is to be evaluated in the order in which it is
+presented.
 ```lisp
  10 ;; 10
 ```
@@ -42,3 +45,13 @@
 (else -1))
       (+ a 1)) ;; 28
 ```
+
+#### 1.2
+Translate the following expression into prefix form
+```lisp
+(/ (+ 5 (+ 4 (- 2 (- 3 (+ 6 (/ 4 3)))))) (* 3 (* (- 6 2) (- 2 7))))
+```
+
+#### 1.3
+Define a procedure that takes three numbers as arguments and returns the sum of the
+squares of the two larger numbers.
