@@ -55,3 +55,34 @@ Translate the following expression into prefix form
 #### 1.3
 Define a procedure that takes three numbers as arguments and returns the sum of the
 squares of the two larger numbers.
+```lisp
+(define (square x) (* x x))
+(define (sum-of-squares x y ) (+ (square x) (square y)))
+(define (min x y) (if (< x y) x y))
+(define (max x y) (if (< x y) y x))
+
+(define (sum-squares-2-biggest x y z)
+  (
+   sum-of-squares (max x y) (max z (min x y))
+		  )
+
+)
+```
+
+#### 1.4
+Observe that our model of evaluation allows for combinations whose operators are
+compound expressions. Use this observation to describe the behavior of the following procedure:
+(define (a-plus-abs-b a b)
+
+```txt
+a plus a abs(b)
+```
+
+#### 1.5
+Ben Bitdiddle has invented a test to determine whether the interpreter he is faced with is
+using applicative-order evaluation or normal-order evaluation. He defines the following two
+procedures:
+
+```txt
+不停执行p function
+```
